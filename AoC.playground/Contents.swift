@@ -1,5 +1,9 @@
 import Foundation
 
-let day1 = Day1Code()
 
-print(try day1.part2())
+//print(try Day1.part1())
+//print(try Day1.part2())
+
+
+//print(try Day2.part1())
+print(try Day2.part2())
