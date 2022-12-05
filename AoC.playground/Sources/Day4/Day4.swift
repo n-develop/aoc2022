@@ -7,14 +7,14 @@ public struct Day4 {
         for pair in pairs {
             let ranges = pair.split(separator: ",")
                 .map { elfRange in
-                    elfRange.split(seperator: "-")
+                    elfRange.split(separator: "-")
                         .map { number in
                             Int(String(number))
                         }
                 }
 
-            let x = ranges[0][1] ... ranges[0][1]
-            let y = ranges[1][0] ... ranges[1][1]
+            let x = ranges[0][1]! ... ranges[0][1]!
+            let y = ranges[1][0]! ... ranges[1][1]!
             if x.clamped(to: y) == x || y.clamped(to: x) == y {
                 sum += 1
             }
@@ -28,14 +28,14 @@ public struct Day4 {
         for pair in pairs {
             let ranges = pair.split(separator: ",")
                 .map { elfRange in
-                    elfRange.split(seperator: "-")
+                    elfRange.split(separator: "-")
                         .map { number in
                             Int(String(number))
                         }
                 }
 
-            let x = ranges[0][1] ... ranges[0][1]
-            let y = ranges[1][0] ... ranges[1][1]
+            let x = ranges[0][1]! ... ranges[0][1]!
+            let y = ranges[1][0]! ... ranges[1][1]!
             if x.overlaps(y) {
                 sum += 1
             }

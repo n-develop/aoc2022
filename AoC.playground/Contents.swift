@@ -18,11 +18,12 @@ Day4Tests.defaultTestSuite.run()
  Day4-1: 556
  Day4-2: 876
 
-*/
+
 let inputDay4 = try Input.load(file: "Day4Data")
 print("Day4-1: \(Day4.part1(input: inputDay4))")
 print("Day4-2: \(Day4.part2(input: inputDay4))")
+ */
 
-
-
-
+let inputDay5 = try Input.load(file: "Day5Data")
+print(Day5.part1(input: inputDay5))
+print(Day5.part2(input: inputDay5))
