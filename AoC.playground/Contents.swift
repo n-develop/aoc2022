@@ -44,13 +44,20 @@ print("Part 1: \(Day8.part1(input: inputDay8))")
 print("Part 2: \(Day8.part2(input: inputDay8))")
  
  
- 2539
- 
- */
 Day9Tests.defaultTestSuite.run()
 let inputDay9 = try Input.load(file: "Day9Data")
 let day9 = Day9(input: inputDay9)
 print("Part 1: \(day9.part1())")
 let day92 = Day9Part2(input: inputDay9)
 print("Part 2: \(day92.execute())")
+ */
+
+Day10Tests.defaultTestSuite.run()
+let inputDay10 = try Input.load(file: "Day10Data")
+let day10 = Day10(input: inputDay10)
+print("Part 1: \(day10.execute())")
+print("---")
+let day102 = Day10Part2(input: inputDay10)
+print("Part 2:")
+day102.execute()
 
